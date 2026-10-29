@@ -32,6 +32,9 @@ function Experience() {
       {/* <Text position={[0, 0, 0]} fontSize={1} color="white">
         Hello, I am a 3D model!
       </Text> */}
+
+
+      
     </>
   );
 }
