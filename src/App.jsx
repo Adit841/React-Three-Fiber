@@ -1,14 +1,13 @@
 import { Canvas } from "@react-three/fiber";
 import React from "react";
-
+import Experience from "./components/Experience";
+import { OrbitControls } from "@react-three/drei";
 const App = () => {
   return (
     <div className="App">
       <Canvas>
-        <mesh>
-          <boxGeometry />
-          <meshBasicMaterial color="red" />
-        </mesh>
+        <OrbitControls />
+        <Experience />
       </Canvas>
     </div>
   );
