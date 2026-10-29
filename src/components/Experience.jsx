@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three";
-import { useGLTF } from "@react-three/drei";
+import { Environment, useGLTF, Text} from "@react-three/drei";
 
 function Experience() {
   const cubeRef = useRef(null);
@@ -23,11 +23,15 @@ function Experience() {
         <boxGeometry />
         <meshBasicMaterial map={texture} />
       </mesh> */}
-      <ambientLight intensity={3} color="white" />
-
+      {/* <ambientLight intensity={3} color="white" />
+        <Environment files='/env_map.hdr'/> 
       <Suspense>
         <primitive object={scene} scale={2} position={[0, -1, 0]} />
-      </Suspense>
+      </Suspense> */}
+
+      {/* <Text position={[0, 0, 0]} fontSize={1} color="white">
+        Hello, I am a 3D model!
+      </Text> */}
     </>
   );
 }
