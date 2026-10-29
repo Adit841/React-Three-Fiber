@@ -1,11 +1,17 @@
-import React from 'react'
+import { Canvas } from "@react-three/fiber";
+import React from "react";
 
 const App = () => {
   return (
-    <div>
-      
+    <div className="App">
+      <Canvas>
+        <mesh>
+          <boxGeometry />
+          <meshBasicMaterial color="red" />
+        </mesh>
+      </Canvas>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
